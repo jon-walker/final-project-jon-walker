@@ -29,8 +29,8 @@ h2 {
 h3,
 p,
 li {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
 }
 
 /* STANDARD SPACING RULES */
@@ -150,26 +150,38 @@ img {
     justify-content: center;
 }
 
-.white {
-    border: solid 1px rgba(202, 202, 202, 0.7);
-    background-color: #ffffff;
+/*
+
+COLOR PALLETTE
+.black: #1a0a0b;
+
+.blue: #059cae;
+
+.green: #7fe907;
+
+.red: #cf1920;
+*/
+
+/* ------------------- SIGN UP FORM ------------------------- */
+input,
+label {
+    display: block;
 }
 
-.black {
-    background-color: #1a0a0b;
-    color: #ffffff;
+label {
+    color: #cf1920;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
-.blue {
-    background-color: #059cae;
-}
-
-.green {
-    background-color: #7fe907;
-}
-
-.red {
-    background-color: #cf1920;
+input[type=text],
+input[type=tel],
+input[type=email] {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(100, 100, 100, 0.3);
 }
 
 /* ------------------- LOGO ANIMATIONS -------------------------- */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Kinetic Fitness Site Prototype</title>
-    <meta name="description" content="We are building a site that will get bodies moving!">
+    <meta name="description" content="Sign up a class at Kinetic Fitness.">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
@@ -17,21 +17,33 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Programs</a></li>
-                <li><a href="signup.html">Classes</a></li>
+                <li><a href="signup.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <p><img src="img/smiling-workout.jpg" alt="Hooray for exercise!" title="Hooray for exercise!"></p>
 
-        <h2>Get Moving!</h2>
+        <h2>Sign Up For Your Free Class</h2>
 
-        <p>Can you rework to make the pizza look more delicious are you busy this weekend? I have a new project with a tight deadline, yet can you lower the price for the website? make it high quality and please use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er</p>
+        <p>Kinetic Fitness wants to get you moving. That's why we offer the first 2 of any of our classes for free with no obligations. Space is limited, so reserve your spot today!</p>
 
-        <p class="button-container">
-            <a class="button" href="#">Button</a>
-        </p>
+        <form class="sign-up" action="mailto:jon@walkerportfolio.company" method="post">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" value="" placeholder="Name" required>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" name="phone" value="">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" value="">
+            <label for="programs">Choose a Class</label>
+            <select id="programs" name="programs">
+                <option value="Kick Boxing">Kickboxing</option>
+                <option value="Spin">Spin</option>
+                <option value="Zumba">Zumba</option>
+            </select>
+            <input class="button-container button" type="submit" name="submit">
+        </form>
+
     </main>
 
     <aside class="specifications">
