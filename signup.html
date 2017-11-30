@@ -32,9 +32,9 @@
             <label for="name">Your Name</label>
             <input id="name" type="text" name="name" value="" placeholder="Name" required>
             <label for="phone">Phone</label>
-            <input id="phone" type="tel" name="phone" value="">
+            <input id="phone" class="tel-helper" type="tel" name="phone" placeholder="(XXX)XXX-XXXX" pattern="\(\d\d\d\)\d\d\d\\-\d\d\d\d">
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" value="">
+            <input id="email" class="helper" type="email" name="email" value="">
             <label for="programs">Choose a Class</label>
             <select id="programs" name="programs">
                 <option value="Kick Boxing">Kickboxing</option>
@@ -58,9 +58,11 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/fullcalendar.min.js"></script>
-    <script src="js/gcal.min.js">
+    <script src="js/gcal.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script> <!-- Form Input Plugin -->
+    <script src="js/phone-codes/phone.js"></script>
+    <script src="js/phone-codes/phone-us.js"></script>
 
-    </script>
     <script src="js/main.js"></script>
 </body>
 </html>

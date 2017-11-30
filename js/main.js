@@ -10,4 +10,9 @@ $(document).ready(function () {
         minTime: '15:00:00',
         maxTime: '22:00:00'
     });
+
+    // Input Masking Ensures Correct Fomat for Telephone Number
+    $(document).ready(function () {
+        $('.tel-helper').inputmask({'mask': '(999) 999-9999'});
+    });
 });
