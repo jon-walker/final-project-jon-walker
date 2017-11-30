@@ -1,0 +1,15 @@
+img/
+
+.stylelintrc
+
+.htmlhintrc
+
+.eslintrc.json
+
+README.md
+
+.jscsrc
+
+.gitattributes
+
+.editorconfig
