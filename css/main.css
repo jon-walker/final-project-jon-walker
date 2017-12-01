@@ -1,3 +1,11 @@
+/*
+------COLOR PALLETTE
+black: #1a0a0b;
+blue: #059cae;
+green: #7fe907;
+red: #cf1920;
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -161,34 +169,6 @@ img {
     box-shadow: 0 3px 5px rgba(102, 102, 102, 0.4);
     transition: padding 0.25s ease-in, font-size 0.25s ease-in;
 }
-
-/* COLOR SWATCHES */
-.colors-list,
-.fonts-list {
-    list-style-type: none;
-    padding-left: 0; /* Aligns list contents flush left w/ other content */
-}
-
-.swatch {
-    width: 100%;
-    height: 4rem;
-    box-shadow: 0 3px 5px rgba(102, 102, 102, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*
-
-COLOR PALLETTE
-.black: #1a0a0b;
-
-.blue: #059cae;
-
-.green: #7fe907;
-
-.red: #cf1920;
-*/
 
 /* ------------------- SIGN UP FORM ------------------------- */
 input,
