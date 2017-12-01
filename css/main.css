@@ -298,16 +298,20 @@ form {
     }
 
     main {
-        width: 57%;
-        margin: 1rem 1rem 0;
+        box-sizing: border-box;
+        width: 55%;
+        margin-top: 3rem;
+        margin-left: 4%;
+        margin-bottom: 6rem;
+        padding: 4rem;
     }
 
     aside {
         width: 25%;
         margin-right: 1rem;
         position: absolute;
-        top: 4rem;
-        right: 1rem;
+        top: 6rem;
+        right: 4%;
     }
 }
 
@@ -320,5 +324,7 @@ form {
 
     main {
         width: 60%;
+        padding-teft: 6rem;
+        padding-right: 6rem;
     }
 }
