@@ -25,4 +25,16 @@ $(document).ready(function () {
             $('#modalWindow').remove();
         });
     });
+
+    // CUSTOM JQUERY FUNCTION - LOCATION INFO BUTTON
+    $('#locationIcon').on('click', function () {
+        $('body').append(
+            '<div id="modalWindow" class="darken"><aside class="modal"><h3>Locations</h3><p>501 Gator Way</p><button id="close" class="button">Close</button></aside></div>'
+        );
+
+        // Create listener for Close button
+        $('#close').on('click', function () {
+            $('#modalWindow').remove();
+        });
+    });
 });
