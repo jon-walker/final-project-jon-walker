@@ -222,6 +222,30 @@ form {
     margin: auto;
 }
 
+/* ------------------- MODAL WINDOW -------------------------- */
+.darken {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10001;
+    margin: 0;
+}
+
+.modal {
+    position: initial;
+    margin: 10% auto;
+}
+
+#close,
+#phoneIcon,
+#locationIcon,
+#hoursIcon {
+    cursor: pointer;
+}
+
 /* ------------------- LOGO ANIMATIONS -------------------------- */
 .logo-spin {
     animation: spin 25s ease-in-out 1s 3;

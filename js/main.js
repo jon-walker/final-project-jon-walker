@@ -12,7 +12,17 @@ $(document).ready(function () {
     });
 
     // Input Masking Ensures Correct Fomat for Telephone Number
-    $(document).ready(function () {
-        $('.tel-helper').inputmask({'mask': '(999) 999-9999'});
+    $('.tel-helper').inputmask({'mask': '(999) 999-9999'});
+
+    // CUSTOM JQUERY FUNCTION - PHONE INFO BUTTON
+    $('#phoneIcon').on('click', function () {
+        $('body').append(
+            '<div id="modalWindow" class="darken"><aside class="modal"><h3>Phone</h3><p>904-555-5555</p><button id="close" class="button">Close</button></aside></div>'
+        );
+
+        // Create listener for Close button
+        $('#close').on('click', function () {
+            $('#modalWindow').remove();
+        });
     });
 });
