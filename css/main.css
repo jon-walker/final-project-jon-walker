@@ -113,6 +113,34 @@ img {
     width: 100%;
 }
 
+/* CONTACT BAR */
+.contact-bar {
+    list-style-type: none;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    bottom: 0;
+    background: rgba(205, 200, 200, 0.9);
+    margin-bottom: 0;
+    padding-left: 0;
+    border-top: solid 10px #cf1920;
+    width: 100vw;
+    z-index: 10000; /* Prevents calendar events from overlapping */
+}
+
+.contact-icon {
+    width: 2rem;
+    filter: drop-shadow(0 0 7px rgba(100, 100, 100, 0.6));
+}
+
+.contact-bar li {
+    width: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 /* BUTTON SETTINGS */
 .button-container {
     margin-top: 2rem;
@@ -244,6 +272,11 @@ form {
     nav ul li {
         margin-right: 2rem;
         font-size: 1.2rem;
+    }
+
+    .contact-bar {
+        width: 35vw;
+        border-radius: 0 10px 0 0;
     }
 
     main {
