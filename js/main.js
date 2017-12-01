@@ -37,4 +37,16 @@ $(document).ready(function () {
             $('#modalWindow').remove();
         });
     });
+
+    // CUSTOM JQUERY FUNCTION - HOURS INFO BUTTON
+    $('#hoursIcon').on('click', function () {
+        $('body').append(
+            '<div id="modalWindow" class="darken"><aside class="modal"><h3>Hours</h3><ul><li>Mon: 3&ndash;10 </li><li>Tues: 3&ndash;10 </li><li>Wed: 3&ndash;10 </li><li>Th: 3&ndash;10 </li><li>Fri: 3&ndash;10 </li></ul><button id="close" class="button">Close</button></aside></div>'
+        );
+
+        // Create listener for Close button
+        $('#close').on('click', function () {
+            $('#modalWindow').remove();
+        });
+    });
 });
