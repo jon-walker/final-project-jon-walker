@@ -114,6 +114,7 @@ nav a {
 
 main {
     margin-top: 6rem;
+    position: relative;
 }
 
 /* IMAGES DEFAULT SETTINGS */
@@ -287,6 +288,16 @@ form {
         width: 80%;
         margin: 1rem auto;
     }
+
+    /* Homepage styles */
+    .home-headline {
+        position: absolute;
+        top: 6rem;
+        left: 4rem;
+        color: #ffffff;
+        font: bold 4rem 'Oswald', 'Noto Sans', sans-serif;
+        text-shadow: 0 2px 5px rgba(100, 100, 100, 0.5);
+    }
 }
 
 /* -------------------MEDIA QUERY 1045 PX + ------------------------- */
@@ -324,7 +335,37 @@ form {
 
     main {
         width: 60%;
-        padding-teft: 6rem;
+        padding-left: 6rem;
         padding-right: 6rem;
+    }
+
+    .home-headline {
+        left: 8rem;
+    }
+}
+
+/* -------------------MEDIA QUERY 1600 PX + ------------------------- */
+@media (min-width: 1600px) {
+
+    .home-text,
+    .home-cta {
+        position: absolute;
+    }
+
+    .home-text {
+        background: rgba(255, 255, 255, 0.9);
+        bottom: 10rem;
+        width: 55%;
+        padding: 2rem;
+        border-bottom: solid 10px #cf1920;
+    }
+
+    .home-cta {
+        bottom: 1rem;
+    }
+
+    .home-headline {
+        top: 8rem;
+        font-size: 5rem;
     }
 }
