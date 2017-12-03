@@ -50,6 +50,11 @@ section + section {
     margin-top: 4rem;
 }
 
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* STANDARD RULES FOR SECTIONING ELEMENTS */
 main,
 aside,
@@ -226,6 +231,44 @@ form {
 #hoursIcon {
     cursor: pointer;
 }
+
+/* ------------------- PROGRAMS INFO ---------------------------- */
+figure {
+    position: relative;
+}
+
+figure img {
+    filter: grayscale(95%);
+    opacity: 0.3;
+    transition: filter 0.75s, opacity 0.75s;
+}
+
+figure:hover > img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: filter 0.75s, opacity 0.75s;
+}
+
+figure:hover > h3 {
+    color: #ffffff;
+    top: 0;
+    transition: color 0.75s, top 0.75s;
+}
+
+figure h3,
+figcaption {
+    position: absolute;
+}
+
+figure h3 {
+    font: bold 3rem 'Oswald', 'Noto Sans', sans-serif;
+    color: #059cae;
+    text-shadow: 0 0 7px rgba(100, 100, 100, 0.6);
+    top: 1rem;
+    left: 1rem;
+    transition: color 0.75s, top 0.75s;
+}
+
 
 /* ------------------- LOGO ANIMATIONS -------------------------- */
 .logo-spin {
