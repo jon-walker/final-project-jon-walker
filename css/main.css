@@ -271,8 +271,10 @@ figure h3 {
 }
 
 figcaption {
+    left: 0;
+    right: 0;
     opacity: 0;
-    bottom: -1rem;
+    bottom: 0;
     background: rgba(255, 255, 255, 0.85);
     padding: 1rem 0.5rem;
     border-top: solid 5px #7fe907;
@@ -357,6 +359,19 @@ figcaption {
         font: bold 4rem 'Oswald', 'Noto Sans', sans-serif;
         text-shadow: 0 2px 5px rgba(100, 100, 100, 0.5);
     }
+
+    /* Program Info */
+    figure {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .program-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
 }
 
 /* -------------------MEDIA QUERY 1045 PX + ------------------------- */
@@ -382,6 +397,10 @@ figcaption {
         position: absolute;
         top: 6rem;
         right: 4%;
+    }
+
+    figure {
+        width: 98%;
     }
 }
 
@@ -426,5 +445,9 @@ figcaption {
     .home-headline {
         top: 8rem;
         font-size: 5rem;
+    }
+
+    figure {
+        width: 45%;
     }
 }
