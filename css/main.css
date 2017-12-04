@@ -235,6 +235,7 @@ form {
 /* ------------------- PROGRAMS INFO ---------------------------- */
 figure {
     position: relative;
+    cursor: pointer;
 }
 
 figure img {
@@ -274,14 +275,14 @@ figcaption {
     bottom: -1rem;
     background: rgba(255, 255, 255, 0.85);
     padding: 1rem 0.5rem;
-    border-bottom: solid 2px #7fe907;
-    transition: opacity 0.75s, bottom 0.75;
+    border-top: solid 5px #7fe907;
+    transition: opacity 1s;
 }
 
 .display {
     opacity: 1;
     bottom: 0;
-    transition: opacity 0.75s, bottom 0.75;
+    transition: opacity 1s;
 }
 
 
