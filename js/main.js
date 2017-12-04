@@ -50,3 +50,19 @@ $(document).ready(function () {
         });
     });
 });
+
+// CUSTOM JAVASCRIPT
+
+// FUNCTION TO ADD/REMOVE CLASS OF DISPLAY
+
+// Get figures
+var figures = document.querySelectorAll('figure');
+
+// Create a loop that adds event listeners to all figures on page.
+for (var i = 0; i < figures.length; i++) {
+    // Add event handler to listen for a click and run a function.
+    figures[i].addEventListener('click', function () {
+        var figcaption = this.getElementsByTagName('figcaption');
+        figcaption[0].classList.toggle('display');
+    });
+}
